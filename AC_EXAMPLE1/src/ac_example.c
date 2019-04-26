@@ -277,6 +277,7 @@ int main(void)
 	enum ac_status_t status;
 
 	pmic_init();
+	ac_write_config(&ACB,1,&acb_config);
 	board_init();
 	sysclk_init();
 	sleepmgr_init();
